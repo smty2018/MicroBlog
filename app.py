@@ -17,7 +17,8 @@ def create_app():
         def index():
             if request.method=="POST":
                 blog_content=request.form.get("content")
-                # print(blog_content)
+                # print(blog_content)   
+
                 dte=str(datetime.date.today())
                 # print(dte)
                 params={"content":blog_content,"date":dte}
